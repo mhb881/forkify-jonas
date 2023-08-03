@@ -159,6 +159,11 @@ const controlAddRecipe = async function (newRecipe) {
   }
 }
 
+
+const newFeature = function () {
+  console.log("Welcome to the application!");
+}
+
 // 初始化函数
 const init = function () {
   bookmarkView.addHandlerRender(controlBookmarks);
@@ -169,7 +174,7 @@ const init = function () {
   paginationView.addHandelerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
   // model.clearBookmarks();
-  console.log("Hello World!");
+  newFeature();
 }
 
 init();
